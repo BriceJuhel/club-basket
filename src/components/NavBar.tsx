@@ -20,8 +20,8 @@ export default function Example() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-16 w-auto"
-                src="/logo.png"
+                className="lg:h-24 h-16 w-auto"
+                src="/images/logo.png"
                 alt="Logo"
               />
             </a>
@@ -38,7 +38,7 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-sm lg:text-lg font-semibold leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
