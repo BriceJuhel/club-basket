@@ -50,7 +50,7 @@ export default function Home() {
               Bienvenue sur le site du <span className="text-purple-900">SOCL</span> Basket
             </h1>
             <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-600">
-              Vous trouverez ici toutes les infos, les résultats, les différents évenements de la vie du club de Candé - Loiré !
+              Vous trouverez ici toutes les infos, les résultats, les différents évènements de la vie du club de Candé - Loiré !
             </p>
           </div>
         </div>
