@@ -17,7 +17,7 @@ export default function NavBar() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto">
+      <header className="absolute inset-x-0 top-0 lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center lg:justify-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-50">
             <a href="/" className="-m-1.5 p-1.5">
@@ -42,7 +42,7 @@ export default function NavBar() {
             {navigation.map((item) => (
               <NavLink key={item.name} to={item.href} className="text-sm lg:text-lg leading-6 text-gray-900 hover:text-[#581c87] relative group" style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'bold'})}>
                 {item.name}
-                <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-yellow-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all"></span>
+                <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-yellow-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>
               </NavLink>
             ))}
           </div>
