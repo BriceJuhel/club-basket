@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Articles', href: '#' },
   { name: 'Plannings', href: '#' },
   { name: 'Résultats', href: '#' },
+  { name: 'Photos', href: '#' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -42,8 +43,7 @@ export default function NavBar() {
             {navigation.map((item) => (
               <NavLink key={item.name} to={item.href} className="text-sm lg:text-lg leading-6 text-gray-900 hover:text-[#581c87] relative group" style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'bold'})}>
                 {item.name}
-                <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-yellow-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>
-              </NavLink>
+                <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-yellow-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>              </NavLink>
             ))}
           </div>
         </nav>

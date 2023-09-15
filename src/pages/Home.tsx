@@ -47,11 +47,11 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-2xl pt-16 sm:pt-32 lg:pt-32 pb-12 sm:pb-24">
           <div className="text-center">
-            <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-6xl">
+            <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-4xl">
               Bienvenue sur le site du <span className="text-purple-900">SOCL</span> Basket
             </h1>
             <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-600">
-              Vous trouverez ici toutes les infos, les résultats, les différents évènements de la vie du club de Candé-Loiré !
+              Vous trouverez ici toutes les infos, les plannings, les résultats, les différents évènements de la vie du club de Candé-Loiré !
             </p>
           </div>
         </div>
@@ -60,8 +60,9 @@ export default function Home() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Infos du club</h2>
-            <p className="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dolore sint facilis consectetur quibusdam? Numquam veniam dolorem nisi temporibus, asperiores et cumque ab exercitationem deleniti est minima obcaecati nesciunt non pariatur? Vitae sapiente rem ad ipsam quia facilis maxime fuga exercitationem officia minus, aspernatur culpa asperiores fugiat, aperiam in laboriosam?</p>
+            <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Infos du club</h2>
+            <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dolore sint facilis consectetur quibusdam? Numquam veniam dolorem nisi temporibus, asperiores et cumque ab exercitationem deleniti est minima obcaecati nesciunt non pariatur? Vitae sapiente rem ad ipsam quia facilis maxime fuga exercitationem officia minus, aspernatur culpa asperiores fugiat, aperiam in laboriosam?</p>
           </div>
       </div>
       </div>
@@ -69,7 +70,7 @@ export default function Home() {
       <div className="bg-white mt-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Dernières News</h2>
+          <h2 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Dernières News</h2>
           </div>
           <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
