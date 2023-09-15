@@ -1,51 +1,63 @@
 const photos = [
     {
       name: 'Album',
-      img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
+      img: '/images/photo-test.jpg',
     },
     {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
-      },    
-      {
-        name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg',
-      },    
-      {
-        name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg',
-      },    
-      {
-        name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg',
+        img: '/images/photo-test.jpg',
       },
       {
         name: 'Album',
-        img: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
+      },
+      {
+        name: 'Album',
+        img: '/images/photo-test.jpg',
       },
   ]
 
@@ -54,7 +66,7 @@ const photos = [
 export const Photos = () => {
     return (        
     <div>
-        <ul role="list" className="px-2 sm:px-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-40 sm:mt-60">
+        <ul role="list" className="px-2 sm:px-20 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mt-40 sm:mt-60">
                 {photos.map((photo) => (
                 <li key={photo.name}>
                     <div className="flex items-center gap-x-6">
