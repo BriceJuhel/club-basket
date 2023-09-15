@@ -8,7 +8,8 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    image : '/images/shoes.jpg'
+    image : '/images/shoes.jpg',
+    alt : 'Chaussures'
   },
   {
     id: 2,
@@ -19,7 +20,8 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    image : '/images/arbitre.jpg'
+    image : '/images/arbitre.jpg',
+    alt : 'Arbitre'
   },
   {
     id: 3,
@@ -30,14 +32,15 @@ const posts = [
     date: 'Mar 16, 2020',
     datetime: '2020-03-16',
     category: { title: 'Marketing', href: '#' },
-    image : '/images/playground.jpg'
+    image : '/images/playground.jpg',
+    alt : 'Terrain'
   },
   // More posts...
 ]
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <main className="bg-white">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -50,7 +53,7 @@ export default function Home() {
               Bienvenue sur le site du <span className="text-purple-900">SOCL</span> Basket
             </h1>
             <p className="mt-6 text-sm sm:text-lg leading-8 text-gray-600">
-              Vous trouverez ici toutes les infos, les résultats, les différents évènements de la vie du club de Candé - Loiré !
+              Vous trouverez ici toutes les infos, les résultats, les différents évènements de la vie du club de Candé-Loiré !
             </p>
           </div>
         </div>
@@ -76,13 +79,13 @@ export default function Home() {
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 mb-4">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-[#581c87] hover:underline mb-4">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
                 </h3>
-                <img src={post.image} alt="" className="rounded-lg h-60 w-full object-cover" />
+                <img src={post.image} alt={post.alt} className="rounded-lg h-60 w-full object-cover" />
                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{post.description}</p>
               </div>              
             </article>
@@ -90,6 +93,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

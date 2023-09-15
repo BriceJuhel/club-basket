@@ -1,7 +1,7 @@
 export const Club = () => {
     return (
-    <div>
+    <main>
         <h3>Organisation du club</h3>
-    </div>
+    </main>
     )
 }
