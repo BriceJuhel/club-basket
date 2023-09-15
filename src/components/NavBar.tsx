@@ -19,7 +19,7 @@ export default function NavBar() {
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center lg:justify-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-50">
+          <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10">
             <a href="/" className="-m-1.5 p-1.5">
               <img
                 className="sm:h-32 h-16 w-auto"
@@ -38,7 +38,7 @@ export default function NavBar() {
               <Bars3Icon className="h-10 w-10" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12 z-20">
             {navigation.map((item) => (
               <NavLink key={item.name} to={item.href} className="text-sm lg:text-lg leading-6 text-gray-900 hover:text-[#581c87] relative group" style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'bold'})}>
                 {item.name}
