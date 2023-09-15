@@ -22,7 +22,7 @@ export default function NavBar() {
           <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-50">
             <a href="/" className="-m-1.5 p-1.5">
               <img
-                className="sm:h-24 h-16 w-auto"
+                className="sm:h-32 h-16 w-auto"
                 src="/images/logo.png"
                 alt="Logo"
               />
@@ -40,8 +40,9 @@ export default function NavBar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <NavLink key={item.name} to={item.href} className="text-sm lg:text-lg leading-6 text-gray-900 hover:text-[#581c87]" style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'bold'})}>
+              <NavLink key={item.name} to={item.href} className="text-sm lg:text-lg leading-6 text-gray-900 hover:text-[#581c87] relative group" style={({isActive}) => ({fontWeight: isActive ? 'bold' : 'bold'})}>
                 {item.name}
+                <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-yellow-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all"></span>
               </NavLink>
             ))}
           </div>
