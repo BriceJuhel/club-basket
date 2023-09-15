@@ -61,8 +61,19 @@ export default function Home() {
 
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Infos du club</h2>
+            <p className="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dolore sint facilis consectetur quibusdam? Numquam veniam dolorem nisi temporibus, asperiores et cumque ab exercitationem deleniti est minima obcaecati nesciunt non pariatur? Vitae sapiente rem ad ipsam quia facilis maxime fuga exercitationem officia minus, aspernatur culpa asperiores fugiat, aperiam in laboriosam?</p>
+          </div>
+          <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3 mb-10">
+          </div>
+      </div>
+      </div>
+
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Dernières News</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl flex items-end"> <img src="images/basketball.png" alt="Ballon basket" className="h-8 mr-5" />Dernières News</h2>
           </div>
           <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map((post) => (
