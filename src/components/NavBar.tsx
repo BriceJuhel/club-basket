@@ -17,12 +17,12 @@ export default function NavBar() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 2xl:w-2/3 2xl:mx-auto">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
+      <header className="absolute inset-x-0 top-0 lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto">
+        <nav className="flex items-center lg:justify-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-50">
             <a href="/" className="-m-1.5 p-1.5">
               <img
-                className="lg:h-24 h-16 w-auto"
+                className="sm:h-24 h-16 w-auto"
                 src="/images/logo.png"
                 alt="Logo"
               />
@@ -35,7 +35,7 @@ export default function NavBar() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-10 w-10" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -45,22 +45,16 @@ export default function NavBar() {
               </NavLink>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Se connecter <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="/logo.png"
-                  alt=""
+                  src="/images/logo.png"
+                  alt="Logo"
                 />
               </a>
               <button
@@ -84,14 +78,6 @@ export default function NavBar() {
                       {item.name}
                     </a>
                   ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Se connecter
-                  </a>
                 </div>
               </div>
             </div>
